@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Responsive Navigation Bar</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-color: #f4f4f4;
+    }
+
+    /* Navigation bar styling */
+    nav {
+      background: linear-gradient(to right, #4b6cb7, #182848);
+      padding: 10px 0;
+    }
+
+    nav ul {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+    }
+
+    nav ul li {
+      margin: 0 15px;
+    }
+
+    nav ul li a {
+      text-decoration: none;
+      color: white;
+      font-size: 18px;
+      padding: 8px 12px;
+      transition: background 0.3s, color 0.3s;
+    }
+
+    nav ul li a:hover {
+      background: #fff;
+      color: yellow;
+      border-radius: 5px;
+    }
+
+    /* Hero section */
+    .hero {
+      background: url('https://source.unsplash.com/1600x600/?technology,code') no-repeat center center/cover;
+      color: blue;
+      text-align: center;
+      padding: 100px 20px;
+    }
+
+    .hero h1 {
+      font-size: 48px;
+      margin-bottom: 10px;
+    }
+
+    .hero p {
+      font-size: 20px;
+    }
+
+    /* About section */
+    .about {
+      padding: 40px 20px;
+      text-align: center;
+      background-color: white;
+    }
+
+    .about h2 {
+      color: #4b6cb7;
+    }
+
+    .about p {
+      max-width: 600px;
+      margin: auto;
+      font-size: 18px;
+    }
+
+    /* Services section */
+    .services {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      padding: 40px 20px;
+      background-color: #eaeaea;
+    }
+
+    .service-card {
+      background: white;
+      border-radius: 8px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+      margin: 15px;
+      padding: 20px;
+      width: 250px;
+      text-align: center;
+    }
+
+    .service-card h3 {
+      color: #182848;
+    }
+
+    /* Footer */
+    footer {
+      background-color: #182848;
+      color: white;
+      text-align: center;
+      padding: 20px 10px;
+    }
+
+    /* Responsive */
+    @media screen and (max-width: 600px) {
+      nav ul {
+        flex-direction: column;
+        align-items: center;
+      }
+
+      nav ul li {
+        margin: 10px 0;
+      }
+
+      .services {
+        flex-direction: column;
+        align-items: center;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <nav>
+    <ul>
+      <li><a href="#">Home</a></li>
+      <li><a href="#">About</a></li>
+      <li><a href="#">Services</a></li>
+      <li><a href="#">Contact</a></li>
+    </ul>
+  </nav>
+
+  <section class="hero">
+    <h1>Welcome to My Website</h1>
+    <p>Explore coding, creativity, and cool projects!</p>
+  </section>
+
+  <section class="about">
+    <h2>About Us</h2>
+    <p>We are passionate developers who love building responsive websites, solving coding challenges, and sharing knowledge with the world.</p>
+  </section>
+
+  <section class="services">
+    <div class="service-card">
+      <h3>Web Design</h3>
+      <p>Modern, responsive, and user-friendly designs for all devices.</p>
+    </div>
+    <div class="service-card">
+      <h3>Development</h3>
+      <p>Custom solutions using HTML, CSS, JavaScript, and backend tech.</p>
+    </div>
+    <div class="service-card">
+      <h3>Consulting</h3>
+      <p>Helping you plan and execute your digital ideas effectively.</p>
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 MyWebsite. All rights reserved.</p>
+  </footer>
+
+</body>
+</html>
