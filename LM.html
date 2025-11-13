@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Library Management System</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <nav class="sidebar">
+    <h2>Library System</h2>
+    <a href="#" class="active">Dashboard</a>
+    <a href="#">Books</a>
+    <a href="#">Members</a>
+    <a href="#">Issue Book</a>
+    <a href="#">Return Book</a>
+    <a href="#">Reports</a>
+    <a href="#">Users</a>
+    <a href="#">Logout</a>
+  </nav>
+
+  <main class="content">
+    <header class="page-header">
+      <h1>Dashboard</h1>
+    </header>
+
+    <section class="stats">
+      <div class="stat-card blue">
+        <h2>1250</h2>
+        <p>Total Books</p>
+      </div>
+      <div class="stat-card teal">
+        <h2>350</h2>
+        <p>Total Members</p>
+      </div>
+      <div class="stat-card orange">
+        <h2>45</h2>
+        <p>Books Issued Today</p>
+      </div>
+      <div class="stat-card red">
+        <h2>12</h2>
+        <p>Overdue Books</p>
+      </div>
+    </section>
+
+    <section class="book-list">
+      <h2>Books List</h2>
+      <table>
+        <thead>
+          <tr>
+            <th>ID</th><th>Title</th><th>Author</th><th>Category</th><th>Quantity</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr><td>1</td><td>The Great Gatsby</td><td>F. Scott Fitzgerald</td><td>Fiction</td><td>5</td></tr>
+          <tr><td>2</td><td>1984</td><td>George Orwell</td><td>Dystopian</td><td>3</td></tr>
+          <tr><td>3</td><td>Clean Code</td><td>Robert C. Martin</td><td>Programming</td><td>4</td></tr>
+        </tbody>
+      </table>
+    </section>
+  </main>
+</body>
+</html>
